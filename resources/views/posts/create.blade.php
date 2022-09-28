@@ -16,7 +16,7 @@
                <h2>Title</h2>
                <input type="text" name=post[title]> placeholder="タイトル">              
            </div>
-           <div class="body">でした。
+           <div class="body">
                <textarea name="post[body]" placeholder="今日も一日お疲れ様でした。"></textarea>
            </div>
            <input type="submit" value="stroe">
