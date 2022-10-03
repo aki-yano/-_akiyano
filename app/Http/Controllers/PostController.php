@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use App\Models\Post;
 
-class postController extends Controller
+class PostController extends Controller
 {
     public function index(Post $post)
     {
@@ -27,6 +27,6 @@ class postController extends Controller
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/', $post->id);
+        return redirect('/posts/'. $post->id);
     }
 }
